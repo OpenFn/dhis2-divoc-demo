@@ -1,3 +1,6 @@
+// TODO: get all TEIs with vaccination state 'NOT YET REQUESTED' via save filter from Austin.
+
+
 // NOTE: if we can get a webhook with the desired info, let's drop this job!
 
 getData('trackedEntityInstances', {

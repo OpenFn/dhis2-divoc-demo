@@ -1,8 +1,10 @@
-// Request a certificate from DIVOC for this person
+// Request a certificate from DIVOC for this array of TEIs
 
-certify([
-  {
-    preEnrollmentCode: dataValue('id'),
+certify(state =>
+  state.data.map(tei => ({
+    preEnrollmentCode: tei.identity,
+    enrollmentType: 'random',
+    programId: 'random',
     recipient: {
       name: 'string',
       dob: '2008-06-03',
@@ -43,5 +45,5 @@ certify([
       },
     },
     meta: {},
-  },
-]);
+  }))
+);
