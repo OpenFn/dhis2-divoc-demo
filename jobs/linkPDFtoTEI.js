@@ -5,7 +5,7 @@ createEvents({
   program: config.vaccinationProgram,
   programStage: config.certificationProgramStage,
   enrollment: tei.enrollments.find(
-    (enrollment) => enrollment.program === config.vaccinationProgram
+    enrollment => enrollment.program === config.vaccinationProgram
   )?.enrollment,
   orgUnit: config.captureOrgUnit,
   notes: [],
@@ -15,6 +15,6 @@ createEvents({
       value: fileResourceId,
     },
   ],
-  status: "COMPLETED",
+  status: 'COMPLETED',
   eventDate: printCurrentDate(),
 });
