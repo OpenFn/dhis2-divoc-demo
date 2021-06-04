@@ -14,5 +14,6 @@ alterState(state => {
   console.log('The response from DHIS2', state.data);
   console.log('Only pass necessary data to the DIVOC job.');
   const necessary = state.data.trackedEntityInstances[0];
+  console.log(necessary);
   return { ...state, data: necessary };
 });
