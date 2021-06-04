@@ -1,3 +1,5 @@
+// Stream the PDF from DIVOC to DHIS2
+
 getCertificateStream("1", (fileStream) => {
   const formData = new FormData();
   formData.append("file", fileStream, "certificate.pdf");
