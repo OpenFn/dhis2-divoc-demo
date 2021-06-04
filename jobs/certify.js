@@ -1,5 +1,7 @@
 // Request a certificate from DIVOC for this person
 
+// TODO: consider checking for an existing cert.
+// checkExistingCert();
 certify([
   {
     preEnrollmentCode: dataValue('id'),
