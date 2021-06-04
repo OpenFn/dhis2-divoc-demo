@@ -1,3 +1,5 @@
+// Request a certificate from DIVOC for this person
+
 certify([
   {
     preEnrollmentCode: dataValue("id"),
