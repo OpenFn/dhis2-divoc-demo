@@ -6,9 +6,9 @@
 //  3a - certificate uploaded
 //  3b - certificate generated
 
-"async bi-directional filestreaming" | "async bi-directional links"
--------------------------------------|-------------
-"webhooks fileStreaming"             | "webhooks only links"
+// "async bi-directional filestreaming" | "async bi-directional links"
+// -------------------------------------|-------------
+// "webhooks fileStreaming"             | "webhooks only links"
 
 // ===============================================
 // TOTALLY ASYNC STRUCTURE (storing a PDF on dhis2)
